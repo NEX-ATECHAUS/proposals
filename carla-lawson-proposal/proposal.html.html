@@ -1,0 +1,1086 @@
+<html>
+<head>
+<title>proposal.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #333333;}
+.s1 { color: #795da3;}
+.s2 { color: #63a35c;}
+.s3 { color: #183691; font-weight: bold;}
+.s4 { color: #333333; font-weight: bold;}
+.s5 { color: #969896;}
+.s6 { color: #0086b3;}
+.s7 { color: #008000; font-weight: bold;}
+.s8 { color: #183691;}
+.s9 { color: #a71d5d;}
+.s10 { color: #000000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+proposal.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">html </span><span class="s1">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">head</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">meta </span><span class="s1">charset</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">title</span><span class="s0">&gt;</span><span class="s4">Proposal • Provider ↔ Resaler Portal System • Nex-a Technology Solutions</span><span class="s0">&lt;/</span><span class="s2">title</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">meta </span><span class="s1">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s1">content</span><span class="s3">=&quot;width=device-width, initial-scale=1&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s5">&lt;!-- Instrument Sans --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">link </span><span class="s1">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap&quot; </span><span class="s1">rel</span><span class="s3">=&quot;stylesheet&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;</span><span class="s2">style</span><span class="s0">&gt;</span>
+        <span class="s0">:</span><span class="s2">root{</span>
+            <span class="s6">--lime</span><span class="s0">:</span><span class="s2">#A8FF6A;</span>
+            <span class="s6">--lime-2</span><span class="s0">:</span><span class="s2">#7DFF8B;</span>
+            <span class="s6">--accent</span><span class="s0">:</span><span class="s2">#40DF72;</span>
+            <span class="s6">--navy</span><span class="s0">:</span><span class="s2">#030027;</span>
+            <span class="s6">--ink</span><span class="s0">:</span><span class="s2">#0E0F14;</span>
+            <span class="s6">--muted</span><span class="s0">:</span><span class="s2">#6B7280;</span>
+            <span class="s6">--card</span><span class="s0">:</span><span class="s2">#ffffff;</span>
+            <span class="s6">--wash</span><span class="s0">:</span><span class="s2">#F3F4F6;</span>
+            <span class="s6">--border</span><span class="s0">:</span><span class="s2">#E5E7EB;</span>
+            <span class="s6">--btn</span><span class="s0">:</span><span class="s2">#111827;</span>
+            <span class="s6">--btnText</span><span class="s0">:</span><span class="s2">#ffffff;</span>
+            <span class="s6">--rail</span><span class="s0">:</span><span class="s2">#F9FAFB;</span>
+            <span class="s6">--shadow-soft</span><span class="s0">:</span><span class="s6">0 18</span><span class="s7">px </span><span class="s6">45</span><span class="s7">px </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.12</span><span class="s2">);</span>
+            <span class="s6">--shadow-card</span><span class="s0">:</span><span class="s6">0 14</span><span class="s7">px </span><span class="s6">30</span><span class="s7">px </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.10</span><span class="s2">);</span>
+            <span class="s6">--radius-lg</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">--radius-md</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">--radius-sm</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">--toc-width</span><span class="s0">:</span><span class="s6">260</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">*{</span><span class="s6">box-sizing</span><span class="s0">:</span><span class="s7">border-box</span><span class="s2">;</span><span class="s6">margin</span><span class="s0">:</span><span class="s6">0</span><span class="s2">;</span><span class="s6">padding</span><span class="s0">:</span><span class="s6">0</span><span class="s2">;}</span>
+
+        <span class="s2">html,body{</span>
+            <span class="s6">font-family</span><span class="s0">:</span><span class="s8">&quot;Instrument Sans&quot;</span><span class="s2">,system-ui,</span><span class="s7">-apple-system</span><span class="s2">,BlinkMacSystemFont,</span><span class="s7">sans-serif</span><span class="s2">;</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#F0F2F5;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--ink);</span>
+            <span class="s6">-webkit-font-smoothing</span><span class="s0">:</span><span class="s7">antialiased</span><span class="s2">;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">17</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">line-height</span><span class="s0">:</span><span class="s6">1.7</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">body{</span>
+            <span class="s6">min-height</span><span class="s0">:</span><span class="s6">100</span><span class="s7">vh</span><span class="s2">;</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">flex-direction</span><span class="s0">:</span><span class="s7">column</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">a{</span><span class="s6">text-decoration</span><span class="s0">:</span><span class="s7">none</span><span class="s2">;</span><span class="s6">color</span><span class="s0">:</span><span class="s7">inherit</span><span class="s2">;}</span>
+
+        <span class="s5">/* Banner */</span>
+        <span class="s2">.banner{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s6">linear-gradient</span><span class="s2">(</span><span class="s6">120</span><span class="s7">deg</span><span class="s2">,</span><span class="s6">var</span><span class="s2">(--lime) </span><span class="s6">0</span><span class="s9">%</span><span class="s2">,</span><span class="s6">var</span><span class="s2">(--lime-2) </span><span class="s6">40</span><span class="s9">%</span><span class="s2">,#ffffff </span><span class="s6">100</span><span class="s9">%</span><span class="s2">);</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#020617;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border-bottom</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.06</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s2">.banner-inner{</span>
+            <span class="s6">max-width</span><span class="s0">:</span><span class="s6">1120</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">margin</span><span class="s0">:</span><span class="s6">0 </span><span class="s7">auto</span><span class="s2">;</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">align-items</span><span class="s0">:</span><span class="s7">center</span><span class="s2">;</span>
+            <span class="s6">justify-content</span><span class="s0">:</span><span class="s7">space-between</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.banner-title{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">22</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">600</span><span class="s2">;</span>
+            <span class="s6">letter-spacing</span><span class="s0">:</span><span class="s6">0.08</span><span class="s7">em</span><span class="s2">;</span>
+            <span class="s6">text-transform</span><span class="s0">:</span><span class="s7">uppercase</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.banner-sub{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#334155;</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Shell */</span>
+        <span class="s2">.shell{</span>
+            <span class="s6">max-width</span><span class="s0">:</span><span class="s6">1120</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">margin</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px auto </span><span class="s6">40</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">0 16</span><span class="s7">px </span><span class="s6">32</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">grid</span><span class="s2">;</span>
+            <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--toc-width) </span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">);</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">24</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">align-items</span><span class="s0">:</span><span class="s7">flex-start</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Sticky TOC */</span>
+        <span class="s2">.toc{</span>
+            <span class="s6">position</span><span class="s0">:</span><span class="s7">sticky</span><span class="s2">;</span>
+            <span class="s6">top</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">align-self</span><span class="s0">:</span><span class="s7">flex-start</span><span class="s2">;</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--rail);</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--radius-lg);</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px </span><span class="s6">16</span><span class="s7">px </span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">148</span><span class="s2">,</span><span class="s6">163</span><span class="s2">,</span><span class="s6">184</span><span class="s2">,</span><span class="s6">0.4</span><span class="s2">);</span>
+            <span class="s6">box-shadow</span><span class="s0">:</span><span class="s6">0 12</span><span class="s7">px </span><span class="s6">30</span><span class="s7">px </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.12</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s2">.toc-heading{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">600</span><span class="s2">;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.toc-list{</span>
+            <span class="s6">list-style</span><span class="s0">:</span><span class="s7">none</span><span class="s2">;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--muted);</span>
+        <span class="s2">}</span>
+        <span class="s2">.toc-list li{</span><span class="s6">margin</span><span class="s0">:</span><span class="s6">5</span><span class="s7">px </span><span class="s6">0</span><span class="s2">;}</span>
+        <span class="s2">.toc-list a{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">block</span><span class="s2">;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px </span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.toc-list a</span><span class="s0">:</span><span class="s2">hover{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#E5E7EB;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--ink);</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Main */</span>
+        <span class="s2">.main{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">flex-direction</span><span class="s0">:</span><span class="s7">column</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Cover card */</span>
+        <span class="s2">.cover{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--card);</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--radius-lg);</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">20</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">box-shadow</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--shadow-soft);</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.08</span><span class="s2">);</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">grid</span><span class="s2">;</span>
+            <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">2.2</span><span class="s7">fr</span><span class="s2">) </span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1.4</span><span class="s7">fr</span><span class="s2">);</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.cover-heading{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">28</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">600</span><span class="s2">;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">8</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.cover-sub{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">17</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--muted);</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.badge{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">inline-flex</span><span class="s2">;</span>
+            <span class="s6">align-items</span><span class="s0">:</span><span class="s7">center</span><span class="s2">;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px </span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">999</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#E5F9ED;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#166534;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">500</span><span class="s2">;</span>
+            <span class="s6">text-transform</span><span class="s0">:</span><span class="s7">uppercase</span><span class="s2">;</span>
+            <span class="s6">letter-spacing</span><span class="s0">:</span><span class="s6">0.08</span><span class="s7">em</span><span class="s2">;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">.meta-grid{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">grid</span><span class="s2">;</span>
+            <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">repeat</span><span class="s2">(</span><span class="s6">2</span><span class="s2">,</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">));</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px </span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--muted);</span>
+        <span class="s2">}</span>
+        <span class="s2">.meta-label{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">text-transform</span><span class="s0">:</span><span class="s7">uppercase</span><span class="s2">;</span>
+            <span class="s6">letter-spacing</span><span class="s0">:</span><span class="s6">0.08</span><span class="s7">em</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#6B7280;</span>
+        <span class="s2">}</span>
+        <span class="s2">.meta-value{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--ink);</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">500</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">.logo-block{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">flex-direction</span><span class="s0">:</span><span class="s7">column</span><span class="s2">;</span>
+            <span class="s6">align-items</span><span class="s0">:</span><span class="s7">flex-end</span><span class="s2">;</span>
+            <span class="s6">justify-content</span><span class="s0">:</span><span class="s7">space-between</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.logo-block img{</span>
+            <span class="s6">max-width</span><span class="s0">:</span><span class="s6">180</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">height</span><span class="s0">:</span><span class="s7">auto</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">.cta-row{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">flex-wrap</span><span class="s0">:</span><span class="s7">wrap</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">justify-content</span><span class="s0">:</span><span class="s7">flex-end</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.btn{</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">999</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s7">none</span><span class="s2">;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px </span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">500</span><span class="s2">;</span>
+            <span class="s6">cursor</span><span class="s0">:</span><span class="s7">pointer</span><span class="s2">;</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">inline-flex</span><span class="s2">;</span>
+            <span class="s6">align-items</span><span class="s0">:</span><span class="s7">center</span><span class="s2">;</span>
+            <span class="s6">justify-content</span><span class="s0">:</span><span class="s7">center</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">transition</span><span class="s0">:</span><span class="s2">transform </span><span class="s6">0.08</span><span class="s7">s ease</span><span class="s2">,box-shadow </span><span class="s6">0.15</span><span class="s7">s ease</span><span class="s2">,</span><span class="s7">background </span><span class="s6">0.15</span><span class="s7">s ease</span><span class="s2">;</span>
+            <span class="s6">text-decoration</span><span class="s0">:</span><span class="s7">none</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.btn-primary{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--btn);</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--btnText);</span>
+            <span class="s6">box-shadow</span><span class="s0">:</span><span class="s6">0 14</span><span class="s7">px </span><span class="s6">30</span><span class="s7">px </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.25</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s2">.btn-primary</span><span class="s0">:</span><span class="s2">hover{</span>
+            <span class="s6">transform</span><span class="s0">:</span><span class="s6">translateY</span><span class="s2">(</span><span class="s9">-</span><span class="s6">1</span><span class="s7">px</span><span class="s2">);</span>
+            <span class="s6">box-shadow</span><span class="s0">:</span><span class="s6">0 18</span><span class="s7">px </span><span class="s6">40</span><span class="s7">px </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">15</span><span class="s2">,</span><span class="s6">23</span><span class="s2">,</span><span class="s6">42</span><span class="s2">,</span><span class="s6">0.3</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s2">.btn-outline{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#ffffff;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#111827;</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s2">#D1D5DB;</span>
+        <span class="s2">}</span>
+        <span class="s2">.btn-outline</span><span class="s0">:</span><span class="s2">hover{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#F3F4F6;</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Section cards */</span>
+        <span class="s2">.section{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--card);</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--radius-lg);</span>
+            <span class="s6">box-shadow</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--shadow-card);</span>
+            <span class="s6">border-left</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px solid </span><span class="s6">var</span><span class="s2">(--accent);</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border-top</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">148</span><span class="s2">,</span><span class="s6">163</span><span class="s2">,</span><span class="s6">184</span><span class="s2">,</span><span class="s6">0.25</span><span class="s2">);</span>
+            <span class="s6">border-right</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">148</span><span class="s2">,</span><span class="s6">163</span><span class="s2">,</span><span class="s6">184</span><span class="s2">,</span><span class="s6">0.25</span><span class="s2">);</span>
+            <span class="s6">border-bottom</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s6">148</span><span class="s2">,</span><span class="s6">163</span><span class="s2">,</span><span class="s6">184</span><span class="s2">,</span><span class="s6">0.25</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s2">.section </span><span class="s9">+ </span><span class="s2">.section{</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;}</span>
+
+        <span class="s2">.section-title{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">22</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">600</span><span class="s2">;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">8</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.section-sub{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--muted);</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">p{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">line-height</span><span class="s0">:</span><span class="s6">1.7</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#111827;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">8</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">ul{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">padding-left</span><span class="s0">:</span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">margin</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px </span><span class="s6">0 8</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#111827;</span>
+        <span class="s2">}</span>
+        <span class="s2">li</span><span class="s9">+</span><span class="s2">li{</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;}</span>
+
+        <span class="s2">.grid-two{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">grid</span><span class="s2">;</span>
+            <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">repeat</span><span class="s2">(</span><span class="s6">2</span><span class="s2">,</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">));</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px </span><span class="s6">22</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.pill{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">inline-flex</span><span class="s2">;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px </span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">999</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s2">#E5E7EB;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--muted);</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">table{</span>
+            <span class="s6">width</span><span class="s0">:</span><span class="s6">100</span><span class="s9">%</span><span class="s2">;</span>
+            <span class="s6">border-collapse</span><span class="s0">:</span><span class="s7">collapse</span><span class="s2">;</span>
+            <span class="s6">margin-top</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">th,td{</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">8</span><span class="s7">px </span><span class="s6">9</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border-bottom</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s2">#E5E7EB;</span>
+            <span class="s6">text-align</span><span class="s0">:</span><span class="s7">left</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">thead{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#F9FAFB;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">text-transform</span><span class="s0">:</span><span class="s7">uppercase</span><span class="s2">;</span>
+            <span class="s6">letter-spacing</span><span class="s0">:</span><span class="s6">0.08</span><span class="s7">em</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--muted);</span>
+        <span class="s2">}</span>
+        <span class="s2">tbody tr</span><span class="s0">:</span><span class="s2">nth-child(even){</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#F9FAFB;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">.highlight-box{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#ECFDF5;</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--radius-md);</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">12</span><span class="s7">px </span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s2">#BBF7D0;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#14532D;</span>
+            <span class="s6">margin-top</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s2">.summary-callout{</span>
+            <span class="s6">margin-top</span><span class="s0">:</span><span class="s6">12</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#111827;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#F9FAFB;</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--radius-lg);</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px </span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">flex-direction</span><span class="s0">:</span><span class="s7">column</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.summary-callout strong{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Accept strip */</span>
+        <span class="s2">.accept-strip{</span>
+            <span class="s6">margin-top</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--accent);</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">var</span><span class="s2">(--radius-md);</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">12</span><span class="s7">px </span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">flex</span><span class="s2">;</span>
+            <span class="s6">flex-wrap</span><span class="s0">:</span><span class="s7">wrap</span><span class="s2">;</span>
+            <span class="s6">justify-content</span><span class="s0">:</span><span class="s7">space-between</span><span class="s2">;</span>
+            <span class="s6">align-items</span><span class="s0">:</span><span class="s7">center</span><span class="s2">;</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.accept-strip-text{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#064E3B;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">500</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s5">/* Stage cards */</span>
+        <span class="s2">.stages-grid{</span>
+            <span class="s6">display</span><span class="s0">:</span><span class="s7">grid</span><span class="s2">;</span>
+            <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">repeat</span><span class="s2">(</span><span class="s6">2</span><span class="s2">,</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">));</span>
+            <span class="s6">gap</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px </span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">margin-top</span><span class="s0">:</span><span class="s6">10</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.stage-card{</span>
+            <span class="s6">background</span><span class="s0">:</span><span class="s2">#F9FAFB;</span>
+            <span class="s6">border-radius</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">padding</span><span class="s0">:</span><span class="s6">14</span><span class="s7">px </span><span class="s6">14</span><span class="s7">px </span><span class="s6">14</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">border</span><span class="s0">:</span><span class="s6">1</span><span class="s7">px solid </span><span class="s2">#E5E7EB;</span>
+        <span class="s2">}</span>
+        <span class="s2">.stage-title{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">600</span><span class="s2">;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.stage-label{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">text-transform</span><span class="s0">:</span><span class="s7">uppercase</span><span class="s2">;</span>
+            <span class="s6">letter-spacing</span><span class="s0">:</span><span class="s6">0.08</span><span class="s7">em</span><span class="s2">;</span>
+            <span class="s6">color</span><span class="s0">:</span><span class="s2">#6B7280;</span>
+            <span class="s6">margin-bottom</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s2">.stage-cost{</span>
+            <span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span>
+            <span class="s6">font-weight</span><span class="s0">:</span><span class="s6">600</span><span class="s2">;</span>
+            <span class="s6">margin-top</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s9">@media </span><span class="s2">(</span><span class="s6">max-width</span><span class="s0">:</span><span class="s6">960</span><span class="s7">px</span><span class="s2">){</span>
+            <span class="s2">.shell{</span>
+                <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">);</span>
+            <span class="s2">}</span>
+            <span class="s2">.toc{</span>
+                <span class="s6">position</span><span class="s0">:</span><span class="s7">static</span><span class="s2">;</span>
+                <span class="s6">order</span><span class="s0">:</span><span class="s9">-</span><span class="s6">1</span><span class="s2">;</span>
+            <span class="s2">}</span>
+            <span class="s2">.cover{</span>
+                <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">);</span>
+            <span class="s2">}</span>
+            <span class="s2">.logo-block{</span>
+                <span class="s6">align-items</span><span class="s0">:</span><span class="s7">flex-start</span><span class="s2">;</span>
+            <span class="s2">}</span>
+            <span class="s2">.stages-grid{</span>
+                <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">);</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s9">@media </span><span class="s2">(</span><span class="s6">max-width</span><span class="s0">:</span><span class="s6">640</span><span class="s7">px</span><span class="s2">){</span>
+            <span class="s2">.banner-inner{</span>
+                <span class="s6">flex-direction</span><span class="s0">:</span><span class="s7">column</span><span class="s2">;</span>
+                <span class="s6">align-items</span><span class="s0">:</span><span class="s7">flex-start</span><span class="s2">;</span>
+            <span class="s2">}</span>
+            <span class="s2">.cta-row{</span>
+                <span class="s6">justify-content</span><span class="s0">:</span><span class="s7">flex-start</span><span class="s2">;</span>
+            <span class="s2">}</span>
+            <span class="s2">.grid-two{</span>
+                <span class="s6">grid-template-columns</span><span class="s0">:</span><span class="s6">minmax</span><span class="s2">(</span><span class="s6">0</span><span class="s2">,</span><span class="s6">1</span><span class="s7">fr</span><span class="s2">);</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+    <span class="s0">&lt;/</span><span class="s2">style</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">head</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">body</span><span class="s0">&gt;</span>
+<span class="s5">&lt;!-- Welcome Screen – Nex-a Branded, No Delay, No Shadows --&gt;</span>
+<span class="s0">&lt;</span><span class="s2">div </span><span class="s1">id</span><span class="s3">=&quot;welcome-screen&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span>
+    <span class="s6">position</span><span class="s0">: </span><span class="s7">fixed</span><span class="s2">;</span>
+    <span class="s6">top</span><span class="s0">: </span><span class="s6">0</span><span class="s2">; </span><span class="s6">left</span><span class="s0">: </span><span class="s6">0</span><span class="s2">;</span>
+    <span class="s6">width</span><span class="s0">: </span><span class="s6">100</span><span class="s7">vw</span><span class="s2">; </span><span class="s6">height</span><span class="s0">: </span><span class="s6">100</span><span class="s7">vh</span><span class="s2">;</span>
+    <span class="s6">background</span><span class="s0">: </span><span class="s2">#ffffff;</span>
+    <span class="s6">display</span><span class="s0">: </span><span class="s7">flex</span><span class="s2">;</span>
+    <span class="s6">flex-direction</span><span class="s0">: </span><span class="s7">column</span><span class="s2">;</span>
+    <span class="s6">align-items</span><span class="s0">: </span><span class="s7">center</span><span class="s2">;</span>
+    <span class="s6">justify-content</span><span class="s0">: </span><span class="s7">center</span><span class="s2">;</span>
+    <span class="s6">z-index</span><span class="s0">: </span><span class="s6">9999</span><span class="s2">;</span>
+    <span class="s6">transition</span><span class="s0">: </span><span class="s7">opacity </span><span class="s6">0.8</span><span class="s7">s ease</span><span class="s2">;</span>
+    <span class="s6">font-family</span><span class="s0">: </span><span class="s8">'Instrument Sans'</span><span class="s2">, system-ui, </span><span class="s7">sans-serif</span><span class="s2">;</span>
+    <span class="s6">color</span><span class="s0">: </span><span class="s2">#0E0F14;</span>
+    <span class="s6">padding</span><span class="s0">: </span><span class="s6">20</span><span class="s7">px</span><span class="s2">;</span>
+    <span class="s6">box-sizing</span><span class="s0">: </span><span class="s7">border-box</span><span class="s2">;</span>
+  <span class="s3">&quot;</span><span class="s0">&gt;</span>
+    <span class="s5">&lt;!-- Logos Row --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">style</span><span class="s3">=&quot;</span>
+      <span class="s6">display</span><span class="s0">: </span><span class="s7">flex</span><span class="s2">;</span>
+      <span class="s6">align-items</span><span class="s0">: </span><span class="s7">center</span><span class="s2">;</span>
+      <span class="s6">gap</span><span class="s0">: </span><span class="s6">60</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s6">margin-bottom</span><span class="s0">: </span><span class="s6">40</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s6">opacity</span><span class="s0">: </span><span class="s6">0</span><span class="s2">;</span>
+      <span class="s6">animation</span><span class="s0">: </span><span class="s2">fadeInUp </span><span class="s6">1</span><span class="s7">s ease-out </span><span class="s6">0.3</span><span class="s7">s forwards</span><span class="s2">;</span>
+    <span class="s3">&quot;</span><span class="s0">&gt;</span>
+        <span class="s5">&lt;!-- Client Logo (Replace with real URL) --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;https://carlalawson.com/wp-content/uploads/2020/08/image-1@2x.jpg&quot;</span>
+             <span class="s1">alt</span><span class="s3">=&quot;Client Logo&quot;</span>
+             <span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">height</span><span class="s0">: </span><span class="s6">80</span><span class="s7">px</span><span class="s2">; </span><span class="s6">width</span><span class="s0">: </span><span class="s7">auto</span><span class="s2">; </span><span class="s6">border-radius</span><span class="s0">: </span><span class="s6">16</span><span class="s7">px</span><span class="s2">; </span><span class="s6">padding</span><span class="s0">: </span><span class="s6">12</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Your Nex-a Logo Image (Replace src with your real logo URL) --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;https://static.wixstatic.com/media/f71431_126660eceb0545b7a1de3eec36659b47~mv2.png&quot;</span>
+             <span class="s1">alt</span><span class="s3">=&quot;Nex-a Technology Solutions&quot;</span>
+             <span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">height</span><span class="s0">: </span><span class="s6">80</span><span class="s7">px</span><span class="s2">; </span><span class="s6">width</span><span class="s0">: </span><span class="s7">auto</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+    <span class="s5">&lt;!-- Welcome Text --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">style</span><span class="s3">=&quot;</span>
+      <span class="s6">text-align</span><span class="s0">: </span><span class="s7">center</span><span class="s2">;</span>
+      <span class="s6">max-width</span><span class="s0">: </span><span class="s6">720</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s6">opacity</span><span class="s0">: </span><span class="s6">0</span><span class="s2">;</span>
+      <span class="s6">animation</span><span class="s0">: </span><span class="s2">fadeInUp </span><span class="s6">1</span><span class="s7">s ease-out </span><span class="s6">0.6</span><span class="s7">s forwards</span><span class="s2">;</span>
+    <span class="s3">&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">h1 </span><span class="s1">style</span><span class="s3">=&quot;</span>
+        <span class="s6">font-size</span><span class="s0">: </span><span class="s6">32</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s6">font-weight</span><span class="s0">: </span><span class="s6">600</span><span class="s2">;</span>
+        <span class="s6">margin-bottom</span><span class="s0">: </span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s6">line-height</span><span class="s0">: </span><span class="s6">1.3</span><span class="s2">;</span>
+        <span class="s6">color</span><span class="s0">: </span><span class="s2">#0E0F14;</span>
+      <span class="s3">&quot;</span><span class="s0">&gt;</span>
+            <span class="s4">Welcome to your proposal from Nex-a Technology Solutions</span>
+        <span class="s0">&lt;/</span><span class="s2">h1</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">style</span><span class="s3">=&quot;</span>
+        <span class="s6">font-size</span><span class="s0">: </span><span class="s6">18</span><span class="s7">px</span><span class="s2">;</span>
+        <span class="s6">color</span><span class="s0">: </span><span class="s2">#6B7280;</span>
+        <span class="s6">line-height</span><span class="s0">: </span><span class="s6">1.7</span><span class="s2">;</span>
+        <span class="s6">margin-bottom</span><span class="s0">: </span><span class="s6">36</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s3">&quot;</span><span class="s0">&gt;</span>
+            <span class="s4">We would love the opportunity to work together.</span>
+        <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+    <span class="s5">&lt;!-- Continue Button --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">button </span><span class="s1">onclick</span><span class="s3">=&quot;</span><span class="s0">document</span><span class="s2">.</span><span class="s0">getElementById</span><span class="s2">(</span><span class="s8">'welcome-screen'</span><span class="s2">).</span><span class="s0">remove</span><span class="s2">()</span><span class="s3">&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span>
+      <span class="s6">background</span><span class="s0">: </span><span class="s2">#A8FF6A;</span>
+      <span class="s6">color</span><span class="s0">: </span><span class="s2">#030027;</span>
+      <span class="s6">border</span><span class="s0">: </span><span class="s7">none</span><span class="s2">;</span>
+      <span class="s6">padding</span><span class="s0">: </span><span class="s6">14</span><span class="s7">px </span><span class="s6">36</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s6">font-size</span><span class="s0">: </span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s6">font-weight</span><span class="s0">: </span><span class="s6">600</span><span class="s2">;</span>
+      <span class="s6">border-radius</span><span class="s0">: </span><span class="s6">999</span><span class="s7">px</span><span class="s2">;</span>
+      <span class="s6">cursor</span><span class="s0">: </span><span class="s7">pointer</span><span class="s2">;</span>
+      <span class="s6">opacity</span><span class="s0">: </span><span class="s6">0</span><span class="s2">;</span>
+      <span class="s6">animation</span><span class="s0">: </span><span class="s2">fadeInUp </span><span class="s6">1</span><span class="s7">s ease-out </span><span class="s6">1</span><span class="s7">s forwards</span><span class="s2">;</span>
+      <span class="s6">transition</span><span class="s0">: </span><span class="s2">transform </span><span class="s6">0.2</span><span class="s7">s ease</span><span class="s2">, box-shadow </span><span class="s6">0.2</span><span class="s7">s ease</span><span class="s2">;</span>
+      <span class="s6">letter-spacing</span><span class="s0">: </span><span class="s6">0.05</span><span class="s7">em</span><span class="s2">;</span>
+    <span class="s3">&quot;</span>
+            <span class="s1">onmouseover</span><span class="s3">=&quot;</span><span class="s9">this</span><span class="s2">.</span><span class="s0">style</span><span class="s2">.</span><span class="s0">transform</span><span class="s9">=</span><span class="s8">'translateY(-2px)'</span><span class="s2">; </span><span class="s9">this</span><span class="s2">.</span><span class="s0">style</span><span class="s2">.</span><span class="s0">boxShadow</span><span class="s9">=</span><span class="s8">'0 10px 25px rgba(168,255,106,0.4)'</span><span class="s3">&quot;</span>
+            <span class="s1">onmouseout</span><span class="s3">=&quot;</span><span class="s9">this</span><span class="s2">.</span><span class="s0">style</span><span class="s2">.</span><span class="s0">transform</span><span class="s9">=</span><span class="s8">'translateY(0)'</span><span class="s2">; </span><span class="s9">this</span><span class="s2">.</span><span class="s0">style</span><span class="s2">.</span><span class="s0">boxShadow</span><span class="s9">=</span><span class="s8">'0 6px 18px rgba(168,255,106,0.3)'</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+        <span class="s4">Continue to Proposal</span>
+    <span class="s0">&lt;/</span><span class="s2">button</span><span class="s0">&gt;</span>
+
+    <span class="s5">&lt;!-- Simple Animation --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">style</span><span class="s0">&gt;</span>
+        <span class="s9">@keyframes </span><span class="s2">fadeInUp {</span>
+            <span class="s2">from { </span><span class="s6">opacity</span><span class="s0">: </span><span class="s6">0</span><span class="s2">; </span><span class="s6">transform</span><span class="s0">: </span><span class="s6">translateY</span><span class="s2">(</span><span class="s6">15</span><span class="s7">px</span><span class="s2">); }</span>
+            <span class="s2">to { </span><span class="s6">opacity</span><span class="s0">: </span><span class="s6">1</span><span class="s2">; </span><span class="s6">transform</span><span class="s0">: </span><span class="s6">translateY</span><span class="s2">(</span><span class="s6">0</span><span class="s2">); }</span>
+        <span class="s2">}</span>
+    <span class="s0">&lt;/</span><span class="s2">style</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+<span class="s5">&lt;!-- Banner --&gt;</span>
+<span class="s0">&lt;</span><span class="s2">header </span><span class="s1">class</span><span class="s3">=&quot;banner&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;banner-inner&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;banner-title&quot;</span><span class="s0">&gt;</span><span class="s4">Your proposal from Nex-a Technology Solutions</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;banner-sub&quot;</span><span class="s0">&gt;</span><span class="s4">Provider ↔ Resaler Portal System with Manufacturer Reporting</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">header</span><span class="s0">&gt;</span>
+
+<span class="s0">&lt;</span><span class="s2">main </span><span class="s1">class</span><span class="s3">=&quot;shell&quot;</span><span class="s0">&gt;</span>
+    <span class="s5">&lt;!-- Sticky TOC --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">nav </span><span class="s1">class</span><span class="s3">=&quot;toc&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;toc-heading&quot;</span><span class="s0">&gt;</span><span class="s4">Contents</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">ul </span><span class="s1">class</span><span class="s3">=&quot;toc-list&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#overview&quot;</span><span class="s0">&gt;</span><span class="s4">1. Overview</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#objectives&quot;</span><span class="s0">&gt;</span><span class="s4">2. Objectives</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#architecture&quot;</span><span class="s0">&gt;</span><span class="s4">3. Proposed architecture</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#stages&quot;</span><span class="s0">&gt;</span><span class="s4">4. Project stages</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#investment&quot;</span><span class="s0">&gt;</span><span class="s4">5. Investment summary</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#cost-reduction&quot;</span><span class="s0">&gt;</span><span class="s4">5.1 Cost-reduction pathways</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#software-costs&quot;</span><span class="s0">&gt;</span><span class="s4">6. Software costs</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#future&quot;</span><span class="s0">&gt;</span><span class="s4">7. Future enhancements</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#payments&quot;</span><span class="s0">&gt;</span><span class="s4">8. Payment schedule</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#support&quot;</span><span class="s0">&gt;</span><span class="s4">9. Support options</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;#summary&quot;</span><span class="s0">&gt;</span><span class="s4">10. Summary</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/</span><span class="s2">nav</span><span class="s0">&gt;</span>
+
+    <span class="s5">&lt;!-- Main content --&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;main&quot;</span><span class="s0">&gt;</span>
+        <span class="s5">&lt;!-- Cover --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">class</span><span class="s3">=&quot;cover&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;badge&quot;</span><span class="s0">&gt;</span><span class="s4">Draft for review</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">h1 </span><span class="s1">class</span><span class="s3">=&quot;cover-heading&quot;</span><span class="s0">&gt;</span><span class="s4">Provider ↔ Resaler Portal System</span><span class="s0">&lt;/</span><span class="s2">h1</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">class</span><span class="s3">=&quot;cover-sub&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">A centralised online portal that connects providers and resalers, replaces spreadsheets with structured data,</span>
+                    <span class="s4">and generates manufacturer-ready reports with a single click.</span>
+                <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-grid&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-label&quot;</span><span class="s0">&gt;</span><span class="s4">Prepared by</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-value&quot;</span><span class="s0">&gt;</span><span class="s4">Nex-a Technology Solutions</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-label&quot;</span><span class="s0">&gt;</span><span class="s4">Prepared for</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-value&quot;</span><span class="s0">&gt;</span><span class="s4">[Client organisation]</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-label&quot;</span><span class="s0">&gt;</span><span class="s4">Primary contact</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-value&quot;</span><span class="s0">&gt;</span><span class="s4">Zee Cobbett, Founder</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-label&quot;</span><span class="s0">&gt;</span><span class="s4">Contact</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;meta-value&quot;</span><span class="s0">&gt;</span><span class="s4">hello@nex-a.com.au</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;logo-block&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;https://static.wixstatic.com/media/f71431_126660eceb0545b7a1de3eec36659b47~mv2.png&quot; </span><span class="s1">alt</span><span class="s3">=&quot;Nex-a Technology Solutions logo&quot;</span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;cta-row&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;btn btn-outline&quot; </span><span class="s1">href</span><span class="s3">=&quot;#investment&quot;</span><span class="s0">&gt;</span><span class="s4">View investment</span><span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;btn btn-primary&quot; </span><span class="s1">href</span><span class="s3">=&quot;mailto:hello@nex-a.com.au?subject=Accepting%20Portal%20System%20Proposal&quot;</span><span class="s0">&gt;</span>
+                        <span class="s4">Accept proposal</span>
+                    <span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Overview --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;overview&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">1. Overview</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">This proposal covers the design and delivery of a centralised online portal that connects providers and resalers,</span>
+                <span class="s4">with the ability to generate custom manufacturer reports for upload into an external portal.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">The solution uses Nex-a’s low-code stack (</span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Softr, Xano, and Make</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">) to balance development speed, cost efficiency,</span>
+                <span class="s4">and long term scalability. The system is designed to launch quickly with a solid base build, and then layer</span>
+                <span class="s4">automations on top as usage grows.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Objectives --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;objectives&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">2. Objectives</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;grid-two&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">span </span><span class="s1">class</span><span class="s3">=&quot;pill&quot;</span><span class="s0">&gt;</span><span class="s4">Business outcomes</span><span class="s0">&lt;/</span><span class="s2">span</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Streamline how resalers submit, track, and repeat orders.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Give the provider a single source of truth for all resaler activity.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Replace manual Excel workflows with structured, searchable data.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Reduce time spent compiling updates for the manufacturer.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">span </span><span class="s1">class</span><span class="s3">=&quot;pill&quot;</span><span class="s0">&gt;</span><span class="s4">Technical outcomes</span><span class="s0">&lt;/</span><span class="s2">span</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Provide secure role-based access for providers and resalers.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Implement a clean data model for clients, orders, and statuses.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Generate manufacturer-ready CSV or XLSX reports on demand.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Create a foundation that can later integrate with CRM, accounting, or AI automations.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Architecture --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;architecture&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">3. Proposed architecture</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">class</span><span class="s3">=&quot;section-sub&quot;</span><span class="s0">&gt;</span><span class="s4">The portal is built around a simple but scalable architecture.</span><span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">table</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Layer</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Platform</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Purpose</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Interface</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Softr.io</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Branded web portal with role-based access for providers and resalers.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Backend </span><span class="s10">&amp;amp; </span><span class="s4">database</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Xano (Sydney region)</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">API-first backend and PostgreSQL database running in Xano’s Australia (Sydney) region, storing client, order, and reporting data.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Automations</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Make.com</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Handles notifications, report scheduling, backups, and external tool integrations.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Reporting</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">CSV / XLSX export</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Creates manufacturer-ready files that match their import template.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Hosting</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Softr + Xano cloud</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Managed hosting, security, backups, and access control without server maintenance.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">table</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;highlight-box&quot;</span><span class="s0">&gt;</span>
+                <span class="s4">The base build focuses on getting a usable portal into production quickly.</span>
+                <span class="s4">Automation, advanced reporting, and integrations are layered on once the day to day workflow has been proven.</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Stages --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;stages&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">4. Project stages</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">class</span><span class="s3">=&quot;section-sub&quot;</span><span class="s0">&gt;</span>
+                <span class="s4">Work is delivered in four clear stages, so you can see progress and value at each step.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stages-grid&quot;</span><span class="s0">&gt;</span>
+                <span class="s5">&lt;!-- Stage 1 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot;</span><span class="s0">&gt;</span><span class="s4">Stage 1</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">Discovery </span><span class="s10">&amp;amp; </span><span class="s4">planning</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">A focused discovery phase to confirm user journeys, data requirements and the</span>
+                        <span class="s4">manufacturer’s export format.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Map provider and resaler workflows for submitting and managing orders.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Confirm core data fields for clients, orders and statuses.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Review manufacturer import template so exports line up correctly.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Prioritise the initial feature set for a fast, safe launch.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Investment:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">A$ 900 – 1 200 ex GST</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+                <span class="s5">&lt;!-- Stage 2 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot;</span><span class="s0">&gt;</span><span class="s4">Stage 2</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">Core build (base system)</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">Build the working portal and backend — the everyday tool for providers and resalers.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Configure Softr portal, navigation and roles for provider/resaler views.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Design Xano data model (clients, orders, statuses) and expose clean APIs for Softr.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Implement resaler dashboard to submit and see their own orders.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Implement provider dashboard to view, search and update orders across resalers.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Add the “Export for manufacturer” function (CSV/XLSX) aligned to their template.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Apply Nex-a visual design and provide admin training.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Investment:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">A$ 5 800 – 6 800 ex GST</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+                <span class="s5">&lt;!-- Stage 3 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot;</span><span class="s0">&gt;</span><span class="s4">Stage 3</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">Automations </span><span class="s10">&amp;amp; </span><span class="s4">enhancements</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">Add essential automations so the system actively supports communication, delivery and reporting.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Communication </span><span class="s10">&amp;amp; </span><span class="s4">emails</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">– confirmations to resalers, notifications to provider, optional priority alerts.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Delivery </span><span class="s10">&amp;amp; </span><span class="s4">shipping</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">– ETA calculation rules in Xano, reminders for upcoming/overdue dispatch, “dispatched” emails with tracking.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Reports </span><span class="s10">&amp;amp; </span><span class="s4">exports</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">– one-click manufacturer export, weekly summary email, optional export archive in Drive/SharePoint.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Data safety</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">– duplicate checks, required field validation, scheduled data backups of Xano tables.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Essential automations from day one:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">order confirmations, ETA calculation, dispatch emails,</span>
+                        <span class="s4">manufacturer export automation, weekly provider summary.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Investment:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">A$ 1 800 – 2 600 ex GST</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+                <span class="s5">&lt;!-- Stage 4 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot;</span><span class="s0">&gt;</span><span class="s4">Stage 4</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">Testing, launch </span><span class="s10">&amp;amp; </span><span class="s4">handover</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">Test with real scenarios, refine, then launch with training and documentation.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">User acceptance testing with sample resalers and sample orders.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Verify exported files work with the manufacturer’s portal.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Apply final adjustments from feedback.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Go live, run a walkthrough and hand over credentials and docs.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Investment:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">A$ 900 – 1 300 ex GST</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Investment summary --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;investment&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">5. Investment summary</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">The figures below provide a range for the initial portal build. Final numbers will be</span>
+                <span class="s4">confirmed at the end of discovery once requirements are locked in.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">table</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Phase</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Description</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">Range (AUD ex GST)</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Stage 1</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Discovery and planning</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">900 – 1 200</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Stage 2</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Core system build (portal, backend, export)</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">5 800 – 6 800</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Stage 3</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Automations </span><span class="s10">&amp;amp; </span><span class="s4">enhancements (communication, reports, delivery </span><span class="s10">&amp;amp; </span><span class="s4">shipping updates)</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">1 800 – 2 600</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Stage 4</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Testing, launch, and handover</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">900 – 1 300</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">colspan</span><span class="s3">=&quot;2&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Estimated total</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt;&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">A$ 9 400 – 11 900</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt;&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">table</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;highlight-box&quot;</span><span class="s0">&gt;</span>
+                <span class="s4">This pricing is designed to be competitive with the Melbourne market for a low-code, production-ready portal,</span>
+                <span class="s4">while leaving room for future growth and automation without a full rebuild.</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;accept-strip&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;accept-strip-text&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">Ready to move ahead? Confirm acceptance by email and we will schedule the discovery session and set up the project workspace.</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;btn btn-primary&quot; </span><span class="s1">href</span><span class="s3">=&quot;mailto:hello@nex-a.com.au?subject=Accepting%20Portal%20System%20Proposal&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">Accept proposal</span>
+                <span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Cost-reduction pathways --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;cost-reduction&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">5.1 Cost-reduction pathways</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">class</span><span class="s3">=&quot;section-sub&quot;</span><span class="s0">&gt;</span>
+                <span class="s4">We want this portal to launch fast and deliver ROI from day one. Below are three transparent pathways to reduce the initial investment </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">without losing the core workflow</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">(provider/resaler dashboards + manufacturer-ready export).</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stages-grid&quot;</span><span class="s0">&gt;</span>
+                <span class="s5">&lt;!-- Pathway 1 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">border-left</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px solid </span><span class="s2">#10B981;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">color</span><span class="s0">:</span><span class="s2">#10B981;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">Pathway 1 – MVP Core</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">Save on non-essential automations</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">Keep Stage 1 and Stage 2 in full.</span>
+                        <span class="s4">Defer </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">all non-critical automations</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">from Stage 3 (e.g. dispatch alerts, ETA rules, weekly summaries, backups).</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">font-size</span><span class="s0">:</span><span class="s6">15</span><span class="s7">px</span><span class="s2">;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Result:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">Working portal + export in under 4 weeks.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Investment:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">A$ 6 700 – 8 000 ex GST</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">font-size</span><span class="s0">:</span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span><span class="s6">color</span><span class="s0">:</span><span class="s2">#6B7280;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                        <span class="s4">Saves A$ 2 700 – 3 900 vs full scope</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+                <span class="s5">&lt;!-- Pathway 2 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">border-left</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px solid </span><span class="s2">#3B82F6;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">color</span><span class="s0">:</span><span class="s2">#3B82F6;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">Pathway 2 – Client-led Discovery</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">You own the scoping doc</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">You prepare a simple shared document covering:</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Current Excel workflow screenshot</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Exact manufacturer import template</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">List of must-have fields &amp; statuses</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">We review &amp; lock scope in </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">1–2 hours</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">(billed at standard rate).</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Stage 1 cost:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">A$ 0 – 300 ex GST</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">font-size</span><span class="s0">:</span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span><span class="s6">color</span><span class="s0">:</span><span class="s2">#6B7280;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                        <span class="s4">Saves A$ 600 – 1 200</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+                <span class="s5">&lt;!-- Pathway 3 --&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-card&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">border-left</span><span class="s0">:</span><span class="s6">6</span><span class="s7">px solid </span><span class="s2">#8B5CF6;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-label&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">color</span><span class="s0">:</span><span class="s2">#8B5CF6;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">Pathway 3 – Pay-upfront discount</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-title&quot;</span><span class="s0">&gt;</span><span class="s4">100% payment on sign-off</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">Pay the </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">final locked quote in full</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">after Discovery (Stage 1) is signed off.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                        <span class="s4">We pass on our saved admin &amp; cash-flow costs.</span>
+                    <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;stage-cost&quot;</span><span class="s0">&gt;&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Discount:</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">5% off total</span><span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">font-size</span><span class="s0">:</span><span class="s6">13</span><span class="s7">px</span><span class="s2">;</span><span class="s6">color</span><span class="s0">:</span><span class="s2">#6B7280;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">4</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                        <span class="s4">Example: A$ 8 000 → A$ 7 600 ex GST</span>
+                    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;highlight-box&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">16</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Combine all three pathways</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">→ </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">A$ 6 400 – 7 600 ex GST</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">for a production-ready portal that </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">replaces spreadsheets on day one</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">.</span>
+                <span class="s4">Add deferred automations later from operational savings.</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;accept-strip&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">12</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;accept-strip-text&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">Tell us which pathway (or combination) works best — we’ll revise the quote instantly.</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;btn btn-primary&quot; </span><span class="s1">href</span><span class="s3">=&quot;mailto:hello@nex-a.com.au?subject=Cost-reduction%20pathway%20selection&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">Select pathway</span>
+                <span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Software costs --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;software-costs&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">6. Ongoing software costs</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">The portal is built on platforms that charge modest monthly fees based on usage. These figures are indicative</span>
+                <span class="s4">and can be tuned once we understand the expected number of resalers, orders, and automation volume.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">table</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Component</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Starter usage</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Growth usage</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Notes</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Softr.io</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 0 – 90 / month</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 150 – 450 / month</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span>
+                        <span class="s4">Free plan for early testing; Basic/Professional/Business plans as user counts and advanced features</span>
+                        <span class="s4">(API calls, advanced data sources, permissions) are required.</span>
+                    <span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Xano (Sydney)</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 0 – 50 / month</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 90 – 220 / month</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span>
+                        <span class="s4">Free “Build” plan suitable for development and light use; Starter/Pro tiers for production workloads and</span>
+                        <span class="s4">dedicated Australia (Sydney) region hosting.</span>
+                    <span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Make.com</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 0 – 20 / month</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 20 – 80 / month</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span>
+                        <span class="s4">Free plan for up to ~1,000 operations/month; Core/Pro plans as automation volume increases</span>
+                        <span class="s4">(notifications, exports, backups, integrations).</span>
+                    <span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Domain and email</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">≈ A$ 20 / year</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">≈ A$ 20 / year</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Typically already in place and managed separately.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">table</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">As a guide, early usage is likely to sit around </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">A$ 80 – 150 per month</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">in platform costs</span>
+                <span class="s4">(mostly Softr + Xano Starter + Make Core). As the number of resalers, orders and automations scales,</span>
+                <span class="s4">this may grow toward </span><span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">A$ 250 – 500 per month</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt; </span><span class="s4">depending on chosen tiers and data volumes.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Future enhancements --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;future&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">7. Future enhancements</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">The initial build focuses on delivering a reliable core workflow. Once in place, there are several natural next steps:</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">ul</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Automated upload of orders or status updates directly into the manufacturer’s system via API or SFTP.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Advanced analytics and dashboards for turnaround time, resaler performance, and repeat orders.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">AI-assisted insights, such as predicted delays or orders at risk based on historical patterns.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">li</span><span class="s0">&gt;</span><span class="s4">Deeper integrations with CRM, accounting, or customer communication tools.</span><span class="s0">&lt;/</span><span class="s2">li</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">ul</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Payments --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;payments&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">8. Payment schedule</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">To balance cash flow and commitment on both sides, payments are distributed across the project as follows:</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">table</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Milestone</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Trigger</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">Percentage</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Discovery complete</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Sign off on functional specification and scope</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">15%</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Core system build</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Base portal and backend in place for review</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">50%</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Automations and testing</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Automations configured and UAT completed</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">25%</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Launch and handover</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Go live and delivery of documentation</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">text-align</span><span class="s0">:</span><span class="s7">right</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s4">10%</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">table</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Support --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;support&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">9. Maintenance and support options</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">After launch, we recommend a light ongoing support arrangement so the portal can evolve with the business rather</span>
+                <span class="s4">than remaining static.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">table</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Plan</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Monthly hours</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Rate per hour</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">th</span><span class="s0">&gt;</span><span class="s4">Best suited for</span><span class="s0">&lt;/</span><span class="s2">th</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">thead</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Micro</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">8 hours</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 200 / hour</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Minor updates, small tweaks, and occasional checks.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Starter</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">20 hours</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 160 / hour</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Priority maintenance for teams actively using the portal.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Flex</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">30 hours</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">A$ 150 / hour</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;</span><span class="s2">td</span><span class="s0">&gt;</span><span class="s4">Ongoing automation tuning, new features, and growth support.</span><span class="s0">&lt;/</span><span class="s2">td</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tr</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/</span><span class="s2">tbody</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">table</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+
+        <span class="s5">&lt;!-- Summary --&gt;</span>
+        <span class="s0">&lt;</span><span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;summary&quot; </span><span class="s1">class</span><span class="s3">=&quot;section&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">h2 </span><span class="s1">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s4">10. Summary</span><span class="s0">&lt;/</span><span class="s2">h2</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">This project delivers a practical, future-ready portal that connects providers and resalers, removes manual</span>
+                <span class="s4">spreadsheet handling, and makes manufacturer reporting simple and repeatable.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+                <span class="s4">By starting with a solid Xano-backed base build and adding automations on top, you get real-world value quickly</span>
+                <span class="s4">without locking yourself into a rigid, over-engineered platform.</span>
+            <span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;summary-callout&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">strong</span><span class="s0">&gt;</span><span class="s4">Estimated total investment: A$ 9 400 – 11 900 ex GST</span><span class="s0">&lt;/</span><span class="s2">strong</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">span</span><span class="s0">&gt;</span>
+            <span class="s4">Final pricing will be confirmed after the discovery stage once requirements are agreed in detail.</span>
+          <span class="s0">&lt;/</span><span class="s2">span</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;accept-strip&quot; </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s6">margin-top</span><span class="s0">:</span><span class="s6">12</span><span class="s7">px</span><span class="s2">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;accept-strip-text&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">To proceed, reply to this proposal or email hello@nex-a.com.au confirming acceptance, and we will schedule your discovery workshop.</span>
+                <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;</span><span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;btn btn-primary&quot; </span><span class="s1">href</span><span class="s3">=&quot;mailto:hello@nex-a.com.au?subject=Accepting%20Portal%20System%20Proposal&quot;</span><span class="s0">&gt;</span>
+                    <span class="s4">Accept proposal</span>
+                <span class="s0">&lt;/</span><span class="s2">a</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/</span><span class="s2">section</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/</span><span class="s2">div</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">main</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">body</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">html</span><span class="s0">&gt;</span></pre>
+</body>
+</html>
